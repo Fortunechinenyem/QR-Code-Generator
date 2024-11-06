@@ -2,8 +2,10 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="">
-      <h1>A QRCode Generator</h1>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+      <h1 className="text-3xl font-bold mb-6 text-gray-800">
+        A QRCode Generator
+      </h1>
       <Link href="/qr-generator"> See more</Link>
     </div>
   );
