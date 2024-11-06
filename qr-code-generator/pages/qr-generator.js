@@ -1,6 +1,5 @@
-"use client ";
 import { useState, useRef } from "react";
-import QRCode from "qrcode.react";
+import { QRCodeCanvas } from "qrcode.react";
 
 const QRGenerator = () => {
   const [input, setInput] = useState("");
@@ -29,7 +28,7 @@ const QRGenerator = () => {
       />
       <div ref={qrRef} className="p-4 bg-white rounded-lg shadow-lg">
         {input ? (
-          <QRCode
+          <QRCodeCanvas
             value={input}
             size={200}
             bgColor="#ffffff"
